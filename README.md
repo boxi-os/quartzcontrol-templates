@@ -28,6 +28,21 @@ werk zugleich:
 - **Rund 270 Beispielseiten**, zweisprachig, die die Vorlage selbst erklären: zu jeder Komponente
   die Seite, auf der sie beschrieben ist. Beim Anlegen abwählbar.
 
+### `latest.json`
+
+Die Fassung, die QuartzControl für die aktuelle hält. Die App fragt sie beim Start ab und sagt auf
+der Startseite Bescheid, wenn sie neuer ist als die laufende — mehr nicht: Es wird nichts geladen
+und nichts installiert. Bekommt sie keine Antwort, sagt sie gar nichts, denn „konnte nicht prüfen"
+ist nicht „alles aktuell".
+
+```json
+{ "version": "1.0.0-beta.1", "url": "https://…", "notes": "" }
+```
+
+`version` ist Semver, Vorabversionen eingeschlossen (`1.0.0-beta.2` ist neuer als `1.0.0-beta.1`,
+`1.0.0` ist neuer als beide). `url` muss `https://` sein, sonst zeigt die App keinen Knopf. `notes`
+ist ein kurzer Satz, der neben der Meldung steht — oder leer.
+
 ## Etwas ändern
 
 Die Datei wird nicht von Hand gebaut. Sie entsteht aus dem Beispielprojekt heraus über
