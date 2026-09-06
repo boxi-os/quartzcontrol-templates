@@ -1,9 +1,9 @@
 # QuartzControl-Vorlagen
 
 Die Vorlagenpakete, die [QuartzControl](https://github.com/boxi-os/Quartz-GUI) beim Anlegen eines
-Projekts anbietet. Ein `.qtpl` ist ein ZIP mit elf Bausteinen — Farben, Schriften, CSS-Variablen,
-Stylesheets, Frames, Layout, Plugins, Theme, Übersetzungen, Presets und, bei dieser Vorlage, dem
-Inhalt.
+Projekts anbietet. Ein `.qtpl` ist ein ZIP mit zwölf Bausteinen — Farben, Schriften, CSS-Variablen,
+Stylesheets, Frames, Layout, Plugins, Theme, Übersetzungen, Presets, die statischen Dateien und,
+bei dieser Vorlage, dem Inhalt.
 
 Dieses Repository ist öffentlich, weil die App die Datei ohne Anmeldung lesen können muss. Sie holt
 sie über `raw.githubusercontent.com`, legt sie einen Tag lang zwischen und fällt auf die im
