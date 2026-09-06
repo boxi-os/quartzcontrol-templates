@@ -14,19 +14,30 @@ nächste angelegte Projekt, ohne dass ein neues Programm gebaut werden muss.
 
 ### `minimal-lesbar.qtpl`
 
-**Minimal & lesbar** — eine vollständige Gestaltung, gedacht als Ausgangspunkt und als Nachschlage-
-werk zugleich:
+**Example** — eine vollständige Gestaltung, gedacht als Ausgangspunkt und als Nachschlagewerk
+zugleich. Der Dateiname ist von der ersten Fassung geblieben; die App holt sie über genau diesen
+Pfad, und ein neuer Name wäre eine Änderung an jeder installierten Kopie.
 
-- **Farben, die gemessen sind.** 87 Text-auf-Grund-Paare, alle über der WCAG-AA-Schwelle, in hell
+- **Farben, die gemessen sind.** 89 Text-auf-Grund-Paare, alle über der WCAG-AA-Schwelle, in hell
   und dunkel. Auch die dreizehn Callout-Typen, deren Standardfarben elfmal daran scheitern.
-- **Drei eigene Seitenraster** für Inhalts-, Listen- und Fehlerseiten, auf einem Zwölf-Spalten-
-  Raster, je für Desktop, Tablet und Telefon ausgelegt.
+- **Vier eigene Seitenraster** für Inhalts-, Listen-, Fehler- und Zeichenseiten, auf einem
+  Zwölf-Spalten-Raster, je für Desktop, Tablet und Telefon ausgelegt.
 - **Selbst gehostete Schriften.** Instrument Sans, Inter und JetBrains Mono, vier Dateien,
-  zusammen 157 KB. Es geht keine Anfrage an Google.
-- **34 Stylesheets**, eines je Komponente, die alle ihre Farben und Maße aus 50 CSS-Variablen
+  zusammen 158 KB. Es geht keine Anfrage an Google.
+- **30 Stylesheets**, eines je Komponente, die alle ihre Farben und Maße aus 50 CSS-Variablen
   lesen — änderbar in der App unter *Stile → Variablen*.
-- **Rund 270 Beispielseiten**, zweisprachig, die die Vorlage selbst erklären: zu jeder Komponente
-  die Seite, auf der sie beschrieben ist. Beim Anlegen abwählbar.
+- **52 Plugin-Einträge**, darunter sechs Instanzen desselben Layout-Box-Plugins: dieselbe
+  Komponente an sechs Stellen, jede mit eigenen Optionen.
+- **Ein Handbuch in sieben Kapiteln**, 266 Markdown-Seiten, zweisprachig, das die Vorlage selbst
+  erklärt: zu jeder Komponente die Seite, auf der sie beschrieben ist. Beim Anlegen abwählbar.
+
+Zusammen 674 KB.
+
+> **Eine Datei muss von Hand mitkopiert werden.** Ein Paket sammelt aus `quartz/static/` nur die
+> Schriften, sonst nichts. Eine der sechs Layout-Boxen lädt ihren Text aus
+> `quartz/static/snippets/sidebar-note.md` (und `.en.md`) — im neuen Projekt zeigt sie deshalb
+> nichts an, bis die beiden Dateien dort liegen. Die anderen fünf tragen ihren Inhalt im
+> Konfigurationseintrag und reisen vollständig mit.
 
 ### `latest.json`
 
