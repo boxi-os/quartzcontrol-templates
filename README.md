@@ -31,13 +31,11 @@ Pfad, und ein neuer Name wäre eine Änderung an jeder installierten Kopie.
 - **Ein Handbuch in sieben Kapiteln**, 266 Markdown-Seiten, zweisprachig, das die Vorlage selbst
   erklärt: zu jeder Komponente die Seite, auf der sie beschrieben ist. Beim Anlegen abwählbar.
 
-Zusammen 674 KB.
+Zusammen 736 KB.
 
-> **Eine Datei muss von Hand mitkopiert werden.** Ein Paket sammelt aus `quartz/static/` nur die
-> Schriften, sonst nichts. Eine der sechs Layout-Boxen lädt ihren Text aus
-> `quartz/static/snippets/sidebar-note.md` (und `.en.md`) — im neuen Projekt zeigt sie deshalb
-> nichts an, bis die beiden Dateien dort liegen. Die anderen fünf tragen ihren Inhalt im
-> Konfigurationseintrag und reisen vollständig mit.
+- **Die statischen Dateien**, die dazugehören: die Textschnipsel, auf die eine der sechs
+  Layout-Boxen zeigt, dazu was sonst unter `quartz/static/` liegt. Bis zum 6. September trug ein
+  Paket davon nichts, und genau diese Box kam im neuen Projekt leer an.
 
 ### `latest.json`
 
