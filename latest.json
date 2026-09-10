@@ -1,5 +1,5 @@
 {
   "version": "1.0.0-beta.1",
-  "url": "https://github.com/boxi-os/quartzcontrol-templates/releases",
-  "notes": ""
+  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.0.0-beta.1",
+  "notes": "First public build: macOS, AppImage, deb and Flatpak for both architectures."
 }
