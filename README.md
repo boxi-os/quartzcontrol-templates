@@ -12,11 +12,41 @@ nächste angelegte Projekt, ohne dass ein neues Programm gebaut werden muss.
 
 ## Was drin ist
 
+### `qc-basic.qtpl`
+
+**Basis-Template** — die Vorlage, die die App beim Anlegen eines Projekts anbietet. Sie hat am
+20. September `minimal-lesbar.qtpl` in dieser Rolle abgelöst, und der Grund ist, was ein neues
+Projekt bekam: entweder ein fremdes Handbuch mit 301 Seiten oder, ohne das Häkchen, eine fertige
+Gestaltung ohne einen einzigen Satz darin. Beides war das Falsche.
+
+Dieselbe Gestaltung wie das Example — gemessene Farben, vier eigene Seitenraster, selbst
+gehostete Schriften, alle 31 Stylesheets —, aber so wenig Inhalt wie möglich:
+
+- **Je eigenem Plugin ein oder zwei Komponenten**, nicht sieben. Eine Marke im Kopf, ein Kasten
+  in der Seitenleiste, eine Navigation links mit Schublade auf dem Telefon, ein Sprachumschalter.
+  Ein Projekt, das mit fünf Kästen, einem Graphen und einer Tag-Leiste startet, wirft seinem
+  Nutzer Arbeit hin, die er erst rückgängig machen muss.
+- **Trotzdem alle 31 Stylesheets**, auch die der abgeschalteten Komponenten. Wer den Explorer,
+  den Graphen oder die Tag-Leiste einschaltet, bekommt sie fertig gestaltet.
+- **Zwanzig kurze Seiten in zwei Sprachen**, drei Ebenen tief. Sie zeigen, wie die Website
+  aussieht, bevor eigene Notizen da sind, und sind zum Löschen gedacht. Beim Anlegen abwählbar.
+- **60 CSS-Variablen**, darunter die dreizehn Callout-Farben — alle in der App unter
+  *Stile → Variablen* änderbar.
+- **Noto Sans und Noto Sans Mono**, drei Dateien, selbst gehostet. Es geht keine Anfrage an
+  Google.
+
+Zusammen 288 KB — gegen 764 KB der Vorlage darunter. **48 Plugin-Einträge, davon 33 aktiv**, vier
+Frames, drei Gruppen, sieben Seitentypen, zwei Presets, elf Übersetzungen.
+
 ### `minimal-lesbar.qtpl`
 
 **Example** — eine vollständige Gestaltung, gedacht als Ausgangspunkt und als Nachschlagewerk
-zugleich. Der Dateiname ist von der ersten Fassung geblieben; die App holt sie über genau diesen
-Pfad, und ein neuer Name wäre eine Änderung an jeder installierten Kopie.
+zugleich.
+
+**Diese Datei bleibt liegen, und zwar unverändert.** Jede App-Fassung, die vor dem 20. September
+ausgeliefert wurde, fragt genau diesen Pfad ab; sie zu löschen oder zu überschreiben nähme allen
+bestehenden Installationen ihre Online-Vorlage. Was unten steht, beschreibt den Stand vom
+20. September morgens und wird nicht nachgezogen.
 
 - **Farben, die gemessen sind.** 93 Text-auf-Grund-Paare, alle über der WCAG-AA-Schwelle, in hell
   und dunkel. Auch die dreizehn Callout-Typen, deren Standardfarben elfmal daran scheitern.
