@@ -30,7 +30,8 @@ gehostete Schriften, alle 31 Stylesheets —, aber so wenig Inhalt wie möglich:
   den Graphen oder die Tag-Leiste einschaltet, bekommt sie fertig gestaltet.
 - **Zwanzig kurze Seiten in zwei Sprachen**, drei Ebenen tief. Sie zeigen, wie die Website
   aussieht, bevor eigene Notizen da sind, und sind zum Löschen gedacht. Beim Anlegen abwählbar.
-- **60 CSS-Variablen**, darunter die dreizehn Callout-Farben — alle in der App unter
+- **66 CSS-Variablen**, darunter die dreizehn Callout-Farben und die sechs, mit denen jede der
+  beiden Seitenspalten stehen bleibt oder mit der Seite mitläuft — alle in der App unter
   *Stile → Variablen* änderbar.
 - **Noto Sans und Noto Sans Mono**, drei Dateien, selbst gehostet. Es geht keine Anfrage an
   Google.
