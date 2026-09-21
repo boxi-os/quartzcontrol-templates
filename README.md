@@ -39,10 +39,31 @@ gehostete Schriften, alle 31 Stylesheets —, aber so wenig Inhalt wie möglich:
 Zusammen 288 KB — gegen 764 KB der Vorlage darunter. **48 Plugin-Einträge, davon 33 aktiv**, vier
 Frames, drei Gruppen, sieben Seitentypen, zwei Presets, elf Übersetzungen.
 
+### `qc-example.qtpl`
+
+**Example** — die Vorführung: dieselbe Gestaltung wie das Basis-Template, aber mit jeder
+Komponente im Einsatz statt nur mit den nötigen, und mit dem Handbuch, das sie erklärt.
+
+**Die App fragt diese Datei nicht.** Sie liegt hier für Menschen: wer die Vorführung ansehen oder
+in ein bestehendes Projekt holen will, lädt sie herunter und nimmt *Vorlagen → Importieren*.
+
+- **Sieben Instanzen desselben Layout-Box-Plugins**, jede mit eigenen Optionen — dieselbe
+  Komponente an sieben Stellen der Seite.
+- **Zwei Navigationen** aus quartz-navigations: ein Akkordeon in der linken Spalte mit Schublade
+  auf dem Telefon, ein Pager unter dem Text. Der Explorer ist abgeschaltet und bleibt gestaltet —
+  ein Häkchen holt ihn zurück, wie er war.
+- **Ein Handbuch in sieben Kapiteln**, 301 Inhaltsdateien, zweisprachig, das die Vorlage selbst
+  erklärt: zu jeder Komponente die Seite, auf der sie beschrieben ist. Beim Import abwählbar.
+- Sonst alles wie im Basis-Template: 31 Stylesheets, 66 CSS-Variablen, vier Frames, Noto Sans und
+  Noto Sans Mono selbst gehostet, gemessene Kontraste.
+
+55 Plugin-Einträge, davon 43 aktiv. Zusammen 723 KB — der Inhalt allein misst vor dem Packen 946 KB.
+
+Zu sehen ist sie unter <https://boxi-os.github.io/Quartz-Example-Template/>.
+
 ### `minimal-lesbar.qtpl`
 
-**Example** — eine vollständige Gestaltung, gedacht als Ausgangspunkt und als Nachschlagewerk
-zugleich.
+**Example, Stand 20. September morgens** — dieselbe Vorlage wie `qc-example.qtpl`, nur eingefroren.
 
 **Diese Datei bleibt liegen, und zwar unverändert.** Jede App-Fassung, die vor dem 20. September
 ausgeliefert wurde, fragt genau diesen Pfad ab; sie zu löschen oder zu überschreiben nähme allen
