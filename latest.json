@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-rc.1",
-  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.0.0-rc.1",
-  "notes": "First release candidate: every Google font in one list and served from the project, the basic template for new projects, keyboard drag on the layout boards, a sturdier Quartz update. Update every machine before opening a synced project."
+  "version": "1.0.0",
+  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.0.0",
+  "notes": "The first stable version: a variables page with one field for values without colour, the project image as the mark of every template, a component picker that inserts the selector the site renders, and one bin icon for every list. Answer \"Always Allow\" when macOS asks about the Keychain after updating."
 }
