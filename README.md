@@ -22,8 +22,9 @@ Gestaltung ohne einen einzigen Satz darin. Beides war das Falsche.
 Dieselbe Gestaltung wie das Example — gemessene Farben, vier eigene Seitenraster, selbst
 gehostete Schriften, alle 31 Stylesheets —, aber so wenig Inhalt wie möglich:
 
-- **Je eigenem Plugin ein oder zwei Komponenten**, nicht sieben. Eine Marke im Kopf, ein Kasten
-  in der Seitenleiste, eine Navigation links mit Schublade auf dem Telefon, ein Sprachumschalter.
+- **Je eigenem Plugin ein oder zwei Komponenten**, nicht sieben. Eine Marke im Kopf — das
+  Projektbild, in der App unter „Konfiguration → Projektbild“ ersetzbar —, ein Kasten in der
+  Seitenleiste, eine Navigation links mit Schublade auf dem Telefon, ein Sprachumschalter.
   Ein Projekt, das mit fünf Kästen, einem Graphen und einer Tag-Leiste startet, wirft seinem
   Nutzer Arbeit hin, die er erst rückgängig machen muss.
 - **Trotzdem alle 31 Stylesheets**, auch die der abgeschalteten Komponenten. Wer den Explorer,
