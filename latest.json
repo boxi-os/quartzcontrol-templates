@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
-  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.0.1",
-  "notes": "A bugfix release: locally served Google fonts no longer duplicate what a template brings itself, a variable keeps its dark value when only the light one is edited, saves on the Styles page no longer undo each other, and the layout board, the server list and the project image behave. Answer \"Always Allow\" when macOS asks about the Keychain after updating."
+  "version": "1.0.2",
+  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.0.2",
+  "notes": "A bugfix release: clicking a variable in Custom CSS inserts it at the cursor, clearing a plugin option removes it instead of writing an empty value (Set empty is there for plugins that need one), a second dev server moves to a free port by itself, and Git sync disables Pull and Push when there is no origin and tells a read error from a missing repository. Answer \"Always Allow\" when macOS asks about the Keychain after updating."
 }
