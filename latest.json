@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
-  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.1.0",
-  "notes": "Plugin options as forms, the layout on a stage, snippets and images for the layout box, and custom.scss belongs to you again (\"Move now\" on the Styles page). If you edit a project on more than one machine, update every machine to 1.1 first and only then move the styles over. Answer \"Always Allow\" when macOS asks about the Keychain after updating."
+  "version": "1.1.1",
+  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.1.1",
+  "notes": "A bugfix release for publishing. SFTP uploaded files writable by every account on the server; 1.1.1 uploads with 0644 and fixes earlier uploads once per target. SFTP and FTP paths starting with \"~\" now mean the login folder, rsync refuses shell characters in the remote path, and a folder target stops when its folder is missing. Answer \"Always Allow\" when macOS asks about the Keychain after updating."
 }
