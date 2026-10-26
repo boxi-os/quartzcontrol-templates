@@ -20,24 +20,25 @@ Projekt bekam: entweder ein fremdes Handbuch mit 301 Seiten oder, ohne das Häkc
 Gestaltung ohne einen einzigen Satz darin. Beides war das Falsche.
 
 Dieselbe Gestaltung wie das Example — gemessene Farben, vier eigene Seitenraster, selbst
-gehostete Schriften, alle zwölf Stylesheets —, aber so wenig Inhalt wie möglich:
+gehostete Schriften, alle dreizehn Stylesheets —, aber so wenig Inhalt wie möglich:
 
 - **Je eigenem Plugin ein oder zwei Komponenten**, nicht sieben. Eine Marke im Kopf — das
   Projektbild, in der App unter „Konfiguration → Projektbild“ ersetzbar —, ein Kasten in der
-  Seitenleiste, eine Navigation links mit Schublade auf dem Telefon, ein Sprachumschalter.
+  Seitenleiste, eine Navigation links mit Schublade auf dem Telefon, ein Sprachumschalter, ein
+  Kontaktformular aus quartz-forms, das noch nichts sendet.
   Ein Projekt, das mit fünf Kästen, einem Graphen und einer Tag-Leiste startet, wirft seinem
   Nutzer Arbeit hin, die er erst rückgängig machen muss.
-- **Trotzdem alle zwölf Stylesheets**, auch für die abgeschalteten Komponenten. Wer den Explorer,
+- **Trotzdem alle dreizehn Stylesheets**, auch für die abgeschalteten Komponenten. Wer den Explorer,
   den Graphen oder die Tag-Leiste einschaltet, bekommt sie fertig gestaltet.
-- **Zwanzig kurze Seiten in zwei Sprachen**, drei Ebenen tief. Sie zeigen, wie die Website
+- **Zweiundzwanzig kurze Seiten in zwei Sprachen**, drei Ebenen tief, eine davon mit dem Formular. Sie zeigen, wie die Website
   aussieht, bevor eigene Notizen da sind, und sind zum Löschen gedacht. Beim Anlegen abwählbar.
-- **66 CSS-Variablen**, darunter die dreizehn Callout-Farben und die sechs, mit denen jede der
-  beiden Seitenspalten stehen bleibt oder mit der Seite mitläuft — alle in der App unter
-  *Stile → Variablen* änderbar.
+- **70 CSS-Variablen**, darunter die dreizehn Callout-Farben, die sechs, mit denen jede der
+  beiden Seitenspalten stehen bleibt oder mit der Seite mitläuft, und die vier Flächen der
+  Seitenspalten, des Kopfs und des Fußes — alle in der App unter *Stile → Variablen* änderbar.
 - **Noto Sans und Noto Sans Mono**, drei Dateien, selbst gehostet. Es geht keine Anfrage an
   Google.
 
-Zusammen 238 KB — gegen 764 KB der Vorlage darunter. **48 Plugin-Einträge, davon 33 aktiv**, vier
+Zusammen 244 KB — gegen 764 KB der Vorlage darunter. **49 Plugin-Einträge, davon 34 aktiv**, vier
 Frames, drei Gruppen, sieben Seitentypen, zwei Presets, elf Übersetzungen.
 
 ### `qc-example.qtpl`
@@ -55,10 +56,10 @@ in ein bestehendes Projekt holen will, lädt sie herunter und nimmt *Vorlagen �
   ein Häkchen holt ihn zurück, wie er war.
 - **Ein Handbuch in sieben Kapiteln**, 303 Inhaltsdateien, zweisprachig, das die Vorlage selbst
   erklärt: zu jeder Komponente die Seite, auf der sie beschrieben ist. Beim Import abwählbar.
-- Sonst alles wie im Basis-Template: zwölf Stylesheets, 66 CSS-Variablen, vier Frames, Noto Sans und
+- Sonst alles wie im Basis-Template: dreizehn Stylesheets, 70 CSS-Variablen, vier Frames, Noto Sans und
   Noto Sans Mono selbst gehostet, gemessene Kontraste.
 
-55 Plugin-Einträge, davon 43 aktiv. Zusammen 686 KB — der Inhalt allein misst vor dem Packen 973 KB.
+55 Plugin-Einträge, davon 43 aktiv. Zusammen 690 KB — der Inhalt allein misst vor dem Packen 1076 KB.
 
 Zu sehen ist sie unter <https://boxi-os.github.io/Quartz-Example-Template/>.
 

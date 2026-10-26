@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1",
-  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.1.1",
-  "notes": "A bugfix release for publishing. SFTP uploaded files writable by every account on the server; 1.1.1 uploads with 0644 and fixes earlier uploads once per target. SFTP and FTP paths starting with \"~\" now mean the login folder, rsync refuses shell characters in the remote path, and a folder target stops when its folder is missing. Answer \"Always Allow\" when macOS asks about the Keychain after updating."
+  "version": "1.2.0",
+  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.2.0",
+  "notes": "A feature release: a Forms tab for the new quartz-forms plugin, with a mail relay QuartzControl builds and uploads; a basic template with a contact form; one website for the plugin handbooks. SFTP and FTP no longer create the folders above a website's folder. Answer \"Always Allow\" when macOS asks about the Keychain after updating."
 }
