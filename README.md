@@ -1,9 +1,10 @@
 # QuartzControl-Vorlagen
 
-Die Vorlagenpakete, die [QuartzControl](https://github.com/boxi-os/QuartzControl) beim Anlegen eines
-Projekts anbietet. Ein `.qtpl` ist ein ZIP mit zwölf Bausteinen — Farben, Schriften, CSS-Variablen,
-Stylesheets, Frames, Layout, Plugins, Theme, Übersetzungen, Presets, die statischen Dateien und,
-bei dieser Vorlage, dem Inhalt.
+Die Vorlagenpakete, die [QuartzControl](https://github.com/boxi-os/QuartzControl) und sein
+Nachfolger beim Anlegen eines Projekts anbieten. Ein `.qtpl` ist ein ZIP mit zwölf Bausteinen —
+Farben, Schriften, CSS-Variablen, Stylesheets, Frames, Layout, Plugins, Theme, Übersetzungen,
+Presets, die statischen Dateien und, bei dieser Vorlage, dem
+Inhalt.
 
 Dieses Repository ist öffentlich, weil die App die Datei ohne Anmeldung lesen können muss. Sie holt
 sie über `raw.githubusercontent.com`, legt sie einen Tag lang zwischen und fällt auf die im
@@ -38,8 +39,15 @@ gehostete Schriften, alle dreizehn Stylesheets —, aber so wenig Inhalt wie mö
 - **Noto Sans und Noto Sans Mono**, drei Dateien, selbst gehostet. Es geht keine Anfrage an
   Google.
 
-Zusammen 244 KB — gegen 764 KB der Vorlage darunter. **49 Plugin-Einträge, davon 34 aktiv**, vier
+Zusammen 244 KB — gegen 764 KB der Vorlage darunter. **45 Plugin-Einträge, davon 31 aktiv**, vier
 Frames, drei Gruppen, sieben Seitentypen, zwei Presets, elf Übersetzungen.
+
+**Seit dem 11. November für Quartz 5.1.** Die Einträge, die 5.1 eingebaut hat (crawl-links,
+remove-draft, content-index), sind draußen, ihre Werte waren ohnehin die Vorgaben von 5.1; ebenso
+das veraltete hard-line-breaks, das schon abgeschaltet war. GitHub-Markdown läuft vor Obsidian-Markdown, wie 5.1 es verlangt. Die
+Beispielseiten haben je Absatz eine Zeile, denn 5.1 macht wie Obsidian aus jedem einfachen
+Zeilenumbruch einen sichtbaren Umbruch. In ein Projekt mit Quartz 5.0 lässt sie sich weiter
+importieren: Ein Import entfernt keine Einträge des Projekts.
 
 ### `qc-example.qtpl`
 
@@ -112,6 +120,9 @@ Die Datei wird nicht von Hand gebaut. Sie entsteht aus dem Beispielprojekt herau
 `npm run template:example` im QuartzControl-Repository, das dafür die gebaute App durch dieselben
 Wege treibt, die ein Klick nimmt. Was hier liegt, ist das Ergebnis — hier eine neue Fassung
 hineinlegen und committen genügt.
+
+Ausnahme ist die Anpassung an Quartz 5.1 am 11. November: ein Skript über dem Paket von 1.3.0, das
+nur die oben genannten Einträge und die Zeilenumbrüche der Beispielseiten ändert.
 
 ---
 
