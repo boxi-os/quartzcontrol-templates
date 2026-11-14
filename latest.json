@@ -1,5 +1,0 @@
-{
-  "version": "1.3.0",
-  "url": "https://github.com/boxi-os/QuartzControl/releases/tag/v1.3.0",
-  "notes": "A feature release: your website as a document — a PDF, an ePub or a single offline HTML file — from books on the new Documents page, and those files on the website as downloads. Update every machine to 1.3 before making documents. Answer \"Always Allow\" when macOS asks about the Keychain after updating."
-}
