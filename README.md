@@ -1,15 +1,18 @@
-# QuartzControl-Vorlagen
+# Vorlagen für QuartzHub
 
-Die Vorlagenpakete, die [QuartzControl](https://github.com/boxi-os/QuartzControl) und sein
-Nachfolger beim Anlegen eines Projekts anbieten. Ein `.qtpl` ist ein ZIP mit zwölf Bausteinen —
+Die Vorlagenpakete, die [QuartzHub](https://github.com/boxi-os/QuartzHub) beim Anlegen eines
+Projekts anbietet, und vor ihm [QuartzControl](https://github.com/boxi-os/QuartzControl), das seit
+dem 11. November eingestellt ist. Beide fragen dieselbe Adresse, deshalb trägt das Repository noch
+QuartzControls Namen. Ein `.qtpl` ist ein ZIP mit zwölf Bausteinen —
 Farben, Schriften, CSS-Variablen, Stylesheets, Frames, Layout, Plugins, Theme, Übersetzungen,
 Presets, die statischen Dateien und, bei dieser Vorlage, dem
 Inhalt.
 
 Dieses Repository ist öffentlich, weil die App die Datei ohne Anmeldung lesen können muss. Sie holt
-sie über `raw.githubusercontent.com`, legt sie einen Tag lang zwischen und fällt auf die im
-Programm mitgelieferte Kopie zurück, wenn kein Netz da ist. Eine Änderung hier erreicht also das
-nächste angelegte Projekt, ohne dass ein neues Programm gebaut werden muss.
+sie über `raw.githubusercontent.com` und legt sie einen Tag lang zwischen. QuartzHub liefert keine
+eigene Kopie mit, denn ein neues Projekt klont Quartz ohnehin aus dem Netz; QuartzControl fiel auf
+seine mitgelieferte zurück. Eine Änderung hier erreicht also das nächste angelegte Projekt, ohne
+dass ein neues Programm gebaut werden muss.
 
 ## Was drin ist
 
@@ -24,7 +27,7 @@ Dieselbe Gestaltung wie das Example — gemessene Farben, vier eigene Seitenrast
 gehostete Schriften, alle dreizehn Stylesheets —, aber so wenig Inhalt wie möglich:
 
 - **Je eigenem Plugin ein oder zwei Komponenten**, nicht sieben. Eine Marke im Kopf — das
-  Projektbild, in der App unter „Konfiguration → Projektbild“ ersetzbar —, ein Kasten in der
+  Projektbild, in QuartzHub unter „Konfiguration → Website“ ersetzbar —, ein Kasten in der
   Seitenleiste, eine Navigation links mit Schublade auf dem Telefon, ein Sprachumschalter, ein
   Kontaktformular aus quartz-forms, das noch nichts sendet.
   Ein Projekt, das mit fünf Kästen, einem Graphen und einer Tag-Leiste startet, wirft seinem
@@ -55,7 +58,8 @@ importieren: Ein Import entfernt keine Einträge des Projekts.
 Komponente im Einsatz statt nur mit den nötigen, und mit dem Handbuch, das sie erklärt.
 
 **Die App fragt diese Datei nicht.** Sie liegt hier für Menschen: wer die Vorführung ansehen oder
-in ein bestehendes Projekt holen will, lädt sie herunter und nimmt *Vorlagen → Importieren*.
+in ein bestehendes Projekt holen will, lädt sie herunter und nimmt in QuartzHub *Vorlagen → Vorlage
+anwenden*.
 
 - **Sieben Instanzen desselben Layout-Box-Plugins**, jede mit eigenen Optionen — dieselbe
   Komponente an sieben Stellen der Seite.
@@ -67,7 +71,14 @@ in ein bestehendes Projekt holen will, lädt sie herunter und nimmt *Vorlagen �
 - Sonst alles wie im Basis-Template: dreizehn Stylesheets, 70 CSS-Variablen, vier Frames, Noto Sans und
   Noto Sans Mono selbst gehostet, gemessene Kontraste.
 
-55 Plugin-Einträge, davon 43 aktiv. Zusammen 690 KB — der Inhalt allein misst vor dem Packen 1076 KB.
+51 Plugin-Einträge, davon 40 aktiv. Zusammen 692 KB — der Inhalt allein misst vor dem Packen 974 KB.
+
+**Seit dem 14. November für Quartz 5.1 und mit QuartzHub erzeugt.** Wie im Basis-Template sind
+crawl-links, remove-draft, content-index und das veraltete hard-line-breaks draußen, und
+GitHub-Markdown läuft vor Obsidian-Markdown. Anders als dort behalten die Seiten ihren Umbruch bei
+Spalte 100; dafür schaltet die Vorlage die strikten Zeilenumbrüche ein (`strictLineBreaks` von
+Obsidian-Markdown), sonst machte 5.1 aus jedem Zeilenende einen sichtbaren Umbruch, gemessen
+3.081 auf 228 Seiten. Das Handbuch nennt QuartzHub statt QuartzControl.
 
 Zu sehen ist sie unter <https://boxi-os.github.io/Quartz-Example-Template/>.
 
@@ -101,7 +112,8 @@ Zusammen 764 KB.
 
 ### `latest.json`
 
-Die Fassung, die QuartzControl für die aktuelle hält. Die App fragt sie beim Start ab und sagt auf
+Die Fassung, die QuartzControl für die aktuelle hält. QuartzHub fragt sie nicht; es fragt die
+Release-Seite seines eigenen Repositorys. Die App fragt sie beim Start ab und sagt auf
 der Startseite Bescheid, wenn sie neuer ist als die laufende — mehr nicht: Es wird nichts geladen
 und nichts installiert. Bekommt sie keine Antwort, sagt sie gar nichts, denn „konnte nicht prüfen"
 ist nicht „alles aktuell".
@@ -116,16 +128,19 @@ ist ein kurzer Satz, der neben der Meldung steht — oder leer.
 
 ## Etwas ändern
 
-Die Datei wird nicht von Hand gebaut. Sie entsteht aus dem Beispielprojekt heraus über
-`npm run template:example` im QuartzControl-Repository, das dafür die gebaute App durch dieselben
-Wege treibt, die ein Klick nimmt. Was hier liegt, ist das Ergebnis — hier eine neue Fassung
-hineinlegen und committen genügt.
+Die Pakete werden nicht von Hand gebaut. Die Example-Vorlage entsteht in QuartzHub mit *Vorlagen →
+Vorlage erstellen* am Beispielprojekt, und zwar jedes Mal neu, wenn sich das Basis-Template ändert:
+Sie baut auf ihm auf. Was hier liegt, ist das Ergebnis — hier eine neue Fassung hineinlegen und
+committen genügt.
 
-Ausnahme ist die Anpassung an Quartz 5.1 am 11. November: ein Skript über dem Paket von 1.3.0, das
-nur die oben genannten Einträge und die Zeilenumbrüche der Beispielseiten ändert.
+Das Basis-Template liegt zusätzlich in QuartzHubs Repository (`Resources/templates/qc-basic.qtpl`),
+für die Tests und für Entwicklungsbauten ohne Netz; beide Kopien bleiben gleich. Bis zum
+11. November entstanden die Pakete über `npm run template:example` im QuartzControl-Repository; die
+Anpassung an Quartz 5.1 war ein Skript über dem Paket von 1.3.0, das nur die oben genannten
+Einträge und die Zeilenumbrüche der Beispielseiten änderte.
 
 ---
 
-*English:* the template packages QuartzControl offers when creating a project. Public because the
-app has to read the file without credentials; it falls back to a copy bundled with the app when
-there is no network.
+*English:* the template packages QuartzHub offers when creating a project, as QuartzControl did
+before it. Public because the app has to read the file without credentials; it caches it for a
+day.
