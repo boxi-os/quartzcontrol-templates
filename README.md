@@ -34,14 +34,23 @@ gehostete Schriften, alle dreizehn Stylesheets —, aber so wenig Inhalt wie mö
   den Graphen oder die Tag-Leiste einschaltet, bekommt sie fertig gestaltet.
 - **Zweiundzwanzig kurze Seiten in zwei Sprachen**, drei Ebenen tief, eine davon mit dem Formular. Sie zeigen, wie die Website
   aussieht, bevor eigene Notizen da sind, und sind zum Löschen gedacht. Beim Anlegen abwählbar.
-- **70 CSS-Variablen**, darunter die dreizehn Callout-Farben, die sechs, mit denen jede der
-  beiden Seitenspalten stehen bleibt oder mit der Seite mitläuft, und die vier Flächen der
-  Seitenspalten, des Kopfs und des Fußes — alle in der App unter *Stile → Variablen* änderbar.
+- **75 CSS-Variablen**, darunter die dreizehn Callout-Farben, die sechs, mit denen jede der
+  beiden Seitenspalten stehen bleibt oder mit der Seite mitläuft, die vier Flächen der
+  Seitenspalten, des Kopfs und des Fußes, der Abstand von Kopf und Fuß zum Fensterrand und die
+  Maße des Randmenüs — alle in der App unter *Stile → Variablen* änderbar.
+- **Kopf und Fuß über die ganze Fensterbreite**, der Text dazwischen behält seine Breite. In
+  QuartzHub ist das je Bereich ein Schalter (*Layout → Frames*, „Volle Fensterbreite“).
+- **Das Randmenü** von quartz-navigations (ab 0.5.0) ist gestaltet, aber nicht eingesetzt; das Menü
+  bleibt das Akkordeon. Wer eine Navigation auf „Randmenü“ stellt, bekommt es fertig, und die
+  Kopfzeile bleibt stehen, wenn das Menü die Seite zur Seite schiebt.
 - **Noto Sans und Noto Sans Mono**, drei Dateien, selbst gehostet. Es geht keine Anfrage an
   Google.
 
-Zusammen 244 KB. **45 Plugin-Einträge, davon 31 aktiv**, vier
+Zusammen 245 KB. **45 Plugin-Einträge, davon 31 aktiv**, vier
 Frames, drei Gruppen, sieben Seitentypen, zwei Presets, elf Übersetzungen.
+
+**Seit dem 16. November mit Kopf und Fuß über die volle Breite**; braucht dafür QuartzHub nach
+1.0.2 (eine ältere Fassung legt die Frames an, ohne die Bereiche zu verbreitern).
 
 **Seit dem 11. November für Quartz 5.1.** Die Einträge, die 5.1 eingebaut hat (crawl-links,
 remove-draft, content-index), sind draußen, ihre Werte waren ohnehin die Vorgaben von 5.1; ebenso
