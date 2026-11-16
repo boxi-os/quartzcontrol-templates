@@ -46,7 +46,7 @@ gehostete Schriften, alle dreizehn Stylesheets —, aber so wenig Inhalt wie mö
 - **Noto Sans und Noto Sans Mono**, drei Dateien, selbst gehostet. Es geht keine Anfrage an
   Google.
 
-Zusammen 245 KB. **45 Plugin-Einträge, davon 31 aktiv**, vier
+Zusammen 244 KB. **45 Plugin-Einträge, davon 31 aktiv**, vier
 Frames, drei Gruppen, sieben Seitentypen, zwei Presets, elf Übersetzungen.
 
 **Seit dem 16. November mit Kopf und Fuß über die volle Breite**; braucht dafür QuartzHub nach
@@ -75,12 +75,12 @@ anwenden*.
   ein Häkchen holt ihn zurück, wie er war.
 - **Ein Handbuch in sieben Kapiteln**, 303 Inhaltsdateien, zweisprachig, das die Vorlage selbst
   erklärt: zu jeder Komponente die Seite, auf der sie beschrieben ist. Beim Anwenden abwählbar.
-- Sonst alles wie im Basis-Template: dreizehn Stylesheets, 70 CSS-Variablen, vier Frames, Noto Sans und
-  Noto Sans Mono selbst gehostet, gemessene Kontraste.
+- Sonst alles wie im Basis-Template: dreizehn Stylesheets, 75 CSS-Variablen, vier Frames mit Kopf und
+  Fuß über die volle Breite, Noto Sans und Noto Sans Mono selbst gehostet, gemessene Kontraste.
 
-51 Plugin-Einträge, davon 40 aktiv. Zusammen 692 KB — der Inhalt allein misst vor dem Packen 974 KB.
+51 Plugin-Einträge, davon 40 aktiv. Zusammen 693 KB — der Inhalt allein misst vor dem Packen 974 KB.
 
-**Seit dem 14. November für Quartz 5.1 und mit QuartzHub erzeugt.** Wie im Basis-Template sind
+**Seit dem 14. November für Quartz 5.1 und mit QuartzHub erzeugt**, zuletzt am 16. November auf dem neuen Basis-Template. Wie im Basis-Template sind
 crawl-links, remove-draft, content-index und das veraltete hard-line-breaks draußen, und
 GitHub-Markdown läuft vor Obsidian-Markdown. Anders als dort behalten die Seiten ihren Umbruch bei
 Spalte 100; dafür schaltet die Vorlage die strikten Zeilenumbrüche ein (`strictLineBreaks` von
